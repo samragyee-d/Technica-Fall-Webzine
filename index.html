@@ -4,18 +4,91 @@
     <meta charset="UTF-8">
     <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script rel="script" href = "script.js"></script>
   </head>
   <body>
     <main>
-        <h1>Welcome to Samragyee and Anagha's Website! </h1>
+      <div class="magazine-title"> 
+        <h1>The Wonder of Fall</h1>
+      </div>
+        
+        <div class="house">
+          <img src="./image/house2.1.png" alt="My Image" usemap="#haunted-house">
+          <map name="haunted-house">
+            <area shape="rect" coords="391,204,456,344" alt="window-left" href="computer.htm" id="window-left">
+            <area shape="rect" coords="815,203,889,340" alt="window-right" href="phone.htm" id="window-right">
+            <area shape="rect" coords="574,230,696,340" alt="middle-arch" href="coffee.htm">
+          </map>
+        </div>
 
         <div class="costume"> <!-- SAMRAGYEE'S SECTION -->
+          <div class = "personalities">
+            <label for="personality-choices">What is your personality type?:</label>
+              <select name="personlity-types" id="personalities-id">
+                <option value="ISTJ">ISTJ - The Inspector</option>
+                <option value="ISTP">ISTP - The Crafter</option>
+                <option value="ISFJ">ISFJ - The Protector</option>
+                <option value="ISFP">ISFP - The Artist</option>
+                <option value="INFJ">INFJ - The Advocate</option>
+                <option value="INFP">INFP - The Mediator</option>
+                <option value="INTJ">INTJ - The Architect</option>
+                <option value="INTP">INTP - The Thinker</option>
+                <option value="ESTP">ESTP - The Persuader</option>
+                <option value="ESTP">ESTP - The Director</option>
+                <option value="ESFP">ESFP - The Performer</option>
+                <option value="ESFJ">ESFJ - The Caregiver</option>
+                <option value="ENFP">ENFP - The Champion</option>
+                <option value="ENFJ">ENFJ - The Giver</option>
+                <option value="ENTP">ENTP - The Debater</option>
+                <option value="ENTJ">ENTJ - The Commander</option>
+              </select>
+          </div>
+
+        
 
         </div>
 
         <div class="food"> <!-- ANAGHA'S SECTION -->
-          <p> this is the food section </p>
+          <!-- these are so cute -->
+          <p class="food_section_label"> 𓇼 ⋆.˚ 𓆉  Spooky Season Food  𓆝 𓆡⋆.˚ 𓇼 </p>
 
+          <div class="flex-container">
+            <div class="container">
+              <img src="images/cookies.jpg" alt="cookies" class="food_image">
+              <div class="overlay">
+                <div class="text">how to make these delicious trick cookies</div>
+              </div>
+            </div>
+
+            <div class="container">
+              <img src="images/toast.jpg" alt="toast" class="food_image">
+              <div class="overlay">
+                <div class="text">how to make this scary breakfast toast</div>
+              </div>
+            </div>
+
+            <div class="container">
+              <img src="images/mocktail.jpg" alt="mocktail" class="food_image">
+              <div class="overlay">
+                <div class="text">how to make this MOCKTAIL for your kids!</div>
+              </div>
+            </div>
+
+            <div class="container">
+              <img src="images/donuts.jpg" alt="donuts" class="food_image">
+              <div class="overlay">
+                <div class="text">how to make these spooky dunkins</div>
+              </div>
+            </div>
+
+            <div class="container">
+              <img src="images/pizza.jpg" alt="pizza" class="food_image">
+              <div class="overlay">
+                <div class="text">how to make this hallo pizza</div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
     </main>

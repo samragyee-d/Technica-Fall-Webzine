@@ -1,3 +1,13 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.magazine-title{
+    text-align:center;
+    font-family: 'Blackletter';
+}
+
 .food_section_label {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(97, 74, 0);
