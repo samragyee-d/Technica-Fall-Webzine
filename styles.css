@@ -3,6 +3,12 @@ body{
     color: white;
 }
 
+#result{
+    width: 200px;
+    height: 100px;
+    background: red;
+}
+
 .magazine-title{
     text-align:center;
     font-family: 'Blackletter';
