@@ -1,17 +1,89 @@
 body{
     background-color: black;
     color: white;
+    
 }
 
+
+area {
+    outline: 5px solid var(--red);
+  }
+  
+  .personalities {
+    padding: 20px;
+    background-color: rgba(100, 100, 100, 0.9);
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .personalities:target {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .personalities > .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: black;
+    padding: 4px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+.food {
+    padding: 20px;
+    background-color: rgba(100, 100, 100, 0.9);
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .food:target {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .food> .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: black;
+    padding: 4px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
 #result{
-    width: 200px;
+    width: 500px;
     height: 100px;
-    background: red;
+    background: rgb(136, 81, 19);
 }
 
 .magazine-title{
     text-align:center;
     font-family: 'Blackletter';
+    size: 100px;
 }
 
 .food_section_label {
