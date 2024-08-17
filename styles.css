@@ -1,17 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+
 body{
     background-color: black;
     color: white;
     
 }
 
-
-area {
-    outline: 5px solid var(--red);
-  }
   
-  .personalities {
+  .costume {
     padding: 20px;
-    background-color: rgba(100, 100, 100, 0.9);
+    background-color: rgba(116, 61, 17, 0.9);
     color: white;
     font-weight: 100;
     font-size: 14px;
@@ -23,12 +22,12 @@ area {
     transition: opacity 300ms, transform 300ms;
   }
   
-  .personalities:target {
+  .costume:target {
     opacity: 1;
     transform: scale(1);
   }
   
-  .personalities > .close {
+  .costume > .close {
     position: absolute;
     right: -10px;
     top: -10px;
@@ -44,7 +43,7 @@ area {
 
 .food {
     padding: 20px;
-    background-color: rgba(100, 100, 100, 0.9);
+    background-color: rgba(116, 61, 17, 0.9);
     color: white;
     font-weight: 100;
     font-size: 14px;
@@ -83,12 +82,13 @@ area {
 .magazine-title{
     text-align:center;
     font-family: 'Blackletter';
-    size: 100px;
+    font-size: 100px;
+    font-family: 'UnifrakturCook', serif;
 }
 
 .food_section_label {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(97, 74, 0);
+    color: rgb(206, 184, 113);
     font-weight: bold;
     font-size: 25px;
     text-align: center;
