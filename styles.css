@@ -1,17 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
-
 body{
     background-color: rgb(37, 20, 4);
     color: white;
 }
 
-.exp-container{
+
+.magazine-title{
+    text-align:center;
+    font-size: 2000%;
+    font-family: 'UnifrakturCook', serif;
+    position: relative;
+}
+
+.magazine-title--active::before {
+    width: 100%;
+}
+
+.spooky {
+    padding: 20px;
+    background-color: rgba(116, 61, 17, 0.9);
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); 
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .spooky:target {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .spooky > .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: black;
+    padding: 4px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+/*.exp-container{
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: rgba(94, 64, 19, 0.6);
-    
+    background-color: rgba(48, 25, 3, 0.774);
+    margin-bottom: 10%;
 }
 
 .about{
@@ -27,32 +71,101 @@ body{
     height: 100%;
     width: 100%;
     padding: 50%, 20%, 30%, 20%;
+}*/
+
+.house{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-  
-  .costume {
+label {
+    font-family: 'UnifrakturCook', serif;
+    font-size: 100px;
+
+}
+
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+
+#personalities-id {
+    background-color: #4a2c2a; 
+    color: #f5f5f5; 
+    border: 1px solid #3b1f1b; 
+    border-radius: 5px; 
+    padding: 10px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    width: 100%; 
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+#personalities-id option {
+    background-color: #4a2c2a; 
+    color: #f5f5f5; 
+}
+
+#personalities-id:hover,
+#personalities-id:focus {
+    background-color: #3b1f1b; 
+    border-color: #2a1714; 
+}
+
+.sumbit {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+button[type="submit"] {
+    background-color: #4a2c2a; 
+    color: #f5f5f5; 
+    border: 1px solid #3b1f1b; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, border-color 0.3s; 
+    display: inline-block; 
+    text-align: center; 
+    text-decoration: none; 
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #3b1f1b; 
+    border-color: #2a1714; 
+    outline: none; 
+}
+
+.costume {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     background-color: rgba(116, 61, 17, 0.9);
     color: white;
     font-weight: 100;
     font-size: 14px;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0); 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0); 
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
-  }
+}
   
-  .costume:target {
+.costume:target {
     opacity: 1;
     transform: scale(1);
-  }
-  
-  .costume > .close {
+}
+
+.costume> .close {
     position: absolute;
-    right: -10px;
-    top: -10px;
+    right: 50px;
+    top: 20px;
     background-color: black;
     padding: 4px 10px;
     color: white;
@@ -62,19 +175,35 @@ body{
 }
 
 
+#result{
+    width: 100%;
+    font-size: 50px;
+    width: 100%;    
+    height: 500px;
+    background: rgb(136, 81, 19);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+
 
 .food {
-    padding: 20px;
+    padding: 40px;
     background-color: rgba(116, 61, 17, 0.9);
     color: white;
     font-weight: 100;
-    font-size: 14px;
+    font-size: px;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0); 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    transform: scale(0); 
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
+    overflow: auto;
+    z-index: 1000;
   }
   
   .food:target {
@@ -84,8 +213,6 @@ body{
   
   .food> .close {
     position: absolute;
-    right: -10px;
-    top: -10px;
     background-color: black;
     padding: 4px 10px;
     color: white;
@@ -94,17 +221,6 @@ body{
     cursor: pointer;
 }
 
-#result{
-    width: 500px;
-    height: 100px;
-    background: rgb(136, 81, 19);
-}
-
-.magazine-title{
-    text-align:center;
-    font-size: 1000%;
-    font-family: 'UnifrakturCook', serif;
-}
 
 .food_section_label {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

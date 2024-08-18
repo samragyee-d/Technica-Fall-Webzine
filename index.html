@@ -10,8 +10,8 @@
     
     <main>
       
-      <div class="magazine-title"> 
-        <h1>The Wonder of Fall</h1>
+      <div> 
+        <h1 class="magazine-title"><span>The</span> <span>Wonder</span> <span>of</span> <span>Fall</span></h1>
       </div>
 
       <div class="exp-container">
@@ -23,41 +23,71 @@
         </div>
       </div>
 
+      <div class="webzine-container">
+        <div class="about-webzine">
+          <h1>A Modern Take on a Magazine: An Interactive Webzine</h1>
+        </div>
+        <div class="explaination">
+          <h2> We selected the fall and spooky season theme for Technica 2024 to coincide with the event's timing, just days before Halloween. Our inspiration also draws from the rich color palette of fall, renaissance art, and classic horror films.</h2>
+        </div>
+      </div>
+
         <div class="house">
           <img src="./image/house2.1.png" alt="My Image" usemap="#haunted-house">
           <map name="haunted-house">
             <area shape="rect" coords="391,204,456,344" href= "#costume" id="window-left">
             <area shape="rect" coords="815,203,889,340" href= "#foods-popup" id="window-right">
-            <area shape="rect" coords="574,230,696,340" href= "window-left.html" id="middle-arch">
+            <area shape="rect" coords="574,230,696,340" href= "#spooky" id="middle-arch">
+            <area shape="rect" coords="84, 293, 141, 416" href= "#spooky" id="far-left-window-left-side">
+            <area shape="rect" coords="254, 234, 330, 368" href= "#spooky" id="far-right-window-left-side">
+            <area shape="rect" coords="961, 227, 1020, 368" href= "#spooky" id="far-left-window-right-side">
+            <area shape="rect" coords="1130, 211, 1194, 400" href= "#spooky" id="far-left-window-right-side">
+
+
+
           </map>
         </div>
+
+        <div class="spooky" id="spooky">
+          <h1>This a spooky window try again!</h1>
+          <a href="#" class="close">X</a>
+
+        </div>
+        
+        
 
         <div class="costume" id="costume"> <!-- SAMRAGYEE'S SECTION -->
             <form id="personality-form">
               <label for="personality">Enter Your Personality Type:</label>
-              <select name="personlity-types" id="personalities-id">
-                <option value="ISTJ">ISTJ</option>
-                <option value="ISTP">ISTP</option>
-                <option value="ISFJ">ISFJ</option>
-                <option value="ISFP">ISFP</option>
-                <option value="INFJ">INFJ</option>
-                <option value="INFP">INFP</option>
-                <option value="INTJ">INTJ</option>
-                <option value="INTP">INTP</option>
-                <option value="ESTP">ESTP</option>
-                <option value="ESTJ">ESTJ</option>
-                <option value="ESFP">ESFP</option>
-                <option value="ESFJ">ESFJ</option>
-                <option value="ENFP">ENFP</option>
-                <option value="ENFJ">ENFJ</option>
-                <option value="ENTP">ENTP</option>
-                <option value="ENTJ">ENTJ</option>
-              </select>
+              <div class="dropdown">
+                <select name="personlity-types" id="personalities-id">
+                  <option value="ISTJ">ISTJ</option>
+                  <option value="ISTP">ISTP</option>
+                  <option value="ISFJ">ISFJ</option>
+                  <option value="ISFP">ISFP</option>
+                  <option value="INFJ">INFJ</option>
+                  <option value="INFP">INFP</option>
+                  <option value="INTJ">INTJ</option>
+                  <option value="INTP">INTP</option>
+                  <option value="ESTP">ESTP</option>
+                  <option value="ESTJ">ESTJ</option>
+                  <option value="ESFP">ESFP</option>
+                  <option value="ESFJ">ESFJ</option>
+                  <option value="ENFP">ENFP</option>
+                  <option value="ENFJ">ENFJ</option>
+                  <option value="ENTP">ENTP</option>
+                  <option value="ENTJ">ENTJ</option>
+                </select>
+              </div>
+              <div class="sumbit">
               <button type="submit">Submit</button>
-              <a class="close" href="#">X</a>
-          </form>
+              </div>
+
+
+            </form>
           <div id="result"></div>
-          <div id="img-result"></div>
+          <a href="#" class="close">X</a>
+
         </div>
       </div>
 

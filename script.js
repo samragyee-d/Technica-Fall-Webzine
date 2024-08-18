@@ -86,3 +86,5 @@ document.getElementById('personality-form').addEventListener('submit', function(
     result.appendChild(imgElement);
 
   });
+
+  
