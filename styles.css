@@ -13,10 +13,8 @@ body{
     font-size: 2000%;
     font-family: 'UnifrakturCook', serif;
     position: relative;
-}
+    animation: fadeIn 5s;
 
-.magazine-title--active::before {
-    width: 100%;
 }
 
 .spooky {
@@ -57,7 +55,7 @@ body{
     border: 10px solid rgb(17, 9, 2);
     font-family: 'UnifrakturCook', serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     text-decoration: underline;
 }
 
@@ -75,14 +73,14 @@ body{
     border: 10px solid rgb(17, 9, 2);
     font-family: 'UnifrakturCook', serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     text-decoration: underline;
 }
 
 .webzine-explaination{
     font-family: 'MedievalSharp', serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 
@@ -295,4 +293,42 @@ button[type="submit"]:focus {
     text-align: center;
     padding: 20px;
     margin: 10px;
+}
+
+.Samragyee-Accreditations{
+    display:flex;
+    flex-direction: row;
+}
+
+.Samragyee-LinkedIn{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Anagha-Accrediations{
+    display:flex;
+    flex-direction: row;
+}
+
+.Anagha-LinkedIn{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Samragyee-Github{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Anagha-Github{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
