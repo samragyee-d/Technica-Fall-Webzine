@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 
 body{
     background-color: rgb(37, 20, 4);
@@ -48,30 +50,42 @@ body{
     cursor: pointer;
 }
 
-
-
-/*.exp-container{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(48, 25, 3, 0.774);
-    margin-bottom: 10%;
-}
-
 .about{
-    height: 100%;
+    height: 30%;
     width: 100%;
-    padding: 50%, 20%, 30%, 20%;
-    text-align:center;
+    background-color: rgb(26, 14, 3);
+    border: 10px solid rgb(17, 9, 2);
     font-family: 'UnifrakturCook', serif;
-    font-size: 200%;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
 }
 
-.explaination {
-    height: 100%;
+.explaination{
+    
+    font-family: 'MedievalSharp', serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.about-webzine{
+    height: 30%;
     width: 100%;
-    padding: 50%, 20%, 30%, 20%;
-}*/
+    background-color: rgb(26, 14, 3);
+    border: 10px solid rgb(17, 9, 2);
+    font-family: 'UnifrakturCook', serif;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.webzine-explaination{
+    font-family: 'MedievalSharp', serif;
+    text-align: center;
+    font-size: 30px;
+
+}
+
 
 .house{
     display: block;
